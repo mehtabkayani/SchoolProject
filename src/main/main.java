@@ -7,6 +7,7 @@ package main;
 
 import static Ui.Ui.menu;
 import SwitchSchool.SwitchSchool;
+import static Ui.Ui.mainMenu;
 import static Ui.Ui.menu;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -29,7 +30,7 @@ public class main {
 //        em.getTransaction().commit();
 //        em.close();
         
-        SwitchSchool.SwitchMenu(menu());
+        SwitchSchool.SwitchMainMenu(mainMenu());
     }
 
 }

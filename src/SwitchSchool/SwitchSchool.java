@@ -7,6 +7,10 @@ package SwitchSchool;
 import Ui.Ui;
 import SchoolDao.SchoolManagementDao;
 import SchoolDao.SchoolManagementDaoImpl;
+import SchoolStatistics.Statistics;
+import static Ui.Ui.SchoolStatistics;
+import static Ui.Ui.mainMenu;
+import static Ui.Ui.menu;
 import schoolmanagementproject.domain.Student;
 
 /**
@@ -14,6 +18,26 @@ import schoolmanagementproject.domain.Student;
  * @author mehtab kayani
  */
 public class SwitchSchool {
+    
+    public static void SwitchMainMenu(int val){
+        
+        switch(val){
+        
+            case 0: 
+                System.exit(0);
+                break;
+            case 1:
+                menu();
+                break;
+            case 2:
+                SchoolStatistics();
+                break;
+            default:
+                System.out.println("Try again");
+                break;
+        }
+        
+    }
     
     public static void SwitchMenu(int val){
          SchoolManagementDaoImpl sdao = new SchoolManagementDaoImpl();
@@ -103,6 +127,39 @@ public class SwitchSchool {
            
             default :
                 System.out.println("Wrong choice");
+                break;
+        }
+    }
+    
+    public static void SwitchStats(int val){
+        switch(val){
+            case 0:
+                mainMenu();
+                break;
+            case 1:
+               Statistics.totalStudent();
+                break;
+            case 2:
+                Statistics.totalTeachers();
+                break;
+            case 3:
+                Statistics.totalCourses();
+                break;
+            case 4:
+              //  Statistics.totalEducations();
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+            case 8:
+                break;
+            case 9:
+                break;
+            default:
+                System.out.println("Try again");
                 break;
         }
     }
