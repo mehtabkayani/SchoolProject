@@ -107,9 +107,10 @@ public class Course {
         ArrayList<String> names = new ArrayList<>();
         for (Teacher t : teachers) {
             names.add(t.getName());
+            
         }
 
-        return "Course{" + "id=" + id + ", name=" + name + names ;
+        return "ID:" + id + ", Course " + name + names ;
     }
 
 }

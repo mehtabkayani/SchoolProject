@@ -31,7 +31,7 @@ public interface SchoolManagementDao {
 
     public void findStudentById(int id);                                               //DONE
 
-    public List<Student> findStudentsByCourse(int id);                                 //FUNKAR INTE
+    public List<Student> findStudentsByCourse(int id);                                 //DONE
 
     public List<Student> findStudentByName(String name);                              //DONE
 
@@ -43,7 +43,7 @@ public interface SchoolManagementDao {
 
     public List<Teacher> findTeacherByCourse(int id);                                   //DONE
 
-    public List<Teacher> findTeacherByEducation(int id);                                //FUNKAR INTE
+    public List<Teacher> findTeacherByEducation(int id);                                //DONE
 
     public List<Student> showAllStudents();                                            //DONE
 
@@ -53,7 +53,19 @@ public interface SchoolManagementDao {
 
     public List<Education> showAllEducations();                                         //DONE
     
-    public boolean updateStudentsName(int id, String name);                         //DONE             
+    public void showStudentInfo();
+    
+    public void showTeacherInfo();                                                      //DONE
+    
+    public void showEducationinfo();                                                    //DONE
+    
+    public void showCourseInfo();                                                       //DONE
+    
+    public boolean updateStudentsName(int id, String name);                         //DONE     
+    
+    public boolean updateStudentEducation(int id, int id2);
+    
+    public boolean updateRemoveTeacherCourse(int id, int id2);
     
     public boolean updateTeachersName(int id, String name);                         //DONE
 
@@ -65,11 +77,4 @@ public interface SchoolManagementDao {
 
     public boolean removeEducation(int id);                                         //DONE
 
-    //Update student name
-    //Update teacher name
-    //Find student by id
-    //Find student by name
-    //Find teacher by id
-    //Find teacher by name
-    //Show students by education
 }

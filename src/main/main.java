@@ -5,10 +5,10 @@
  */
 package main;
 
-import static Ui.Ui.menu;
+
 import SwitchSchool.SwitchSchool;
 import static Ui.Ui.mainMenu;
-import static Ui.Ui.menu;
+
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
