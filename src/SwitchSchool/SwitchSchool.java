@@ -241,9 +241,13 @@ public class SwitchSchool {
                     managementMenu();
                     break;
                 case 1:
+                    System.out.println("****ALL STUDENTS****");
+                    sdao.showStudentInfo();
                     sdao.removeStudent(Ui.enterId());
                     break;
                 case 2:
+                    System.out.println("****ALL TEACHERS****");
+                    sdao.showTeacherInfo();
                     sdao.removeTeacher(Ui.enterId());
                     break;
                 case 3:
